@@ -33,22 +33,4 @@ async function Router () {
   const route = Routes[location] || Routes[404]
   route();
 }
-/**********************
- * HISTORY PUSH STATE *
- **********************/
-/**
- * 
-// Function to navigate to a new URL and update the browser history
-function navigateTo(url) {
-  // Use the pushState method to navigate to the new URL and update the browser history
-  history.pushState(null, null, url);
-
-  // Trigger the route change manually
-  handleRouteChange();
-}
-
-// Example usage to navigate to a product page
-navigateTo("/products/1"); 
-
- */
 
